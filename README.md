@@ -1,12 +1,75 @@
-# React + Vite
+# ITZFIZZ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with Vite, featuring smooth animations with GSAP and responsive styling with Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **Vite** - Next generation frontend tooling
+- ⚛️ **React 19** - Modern UI library with latest features
+- 🎨 **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- ✨ **GSAP** - Professional animation library for creating smooth, high-performance animations
+- 🔥 **Fast Refresh** - Blazing fast component refresh during development
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 16+ and npm/yarn installed
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+  ├── components/      # Reusable React components
+  ├── assets/          # Static assets (images, etc.)
+  ├── App.jsx          # Main application component
+  ├── main.jsx         # Application entry point
+  └── index.css        # Global styles
+public/                 # Public assets
+```
+
+## Technologies Used
+
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling
+- **GSAP** - Animation library
+
+## License
+
+This project is open source and available under the MIT License.
