@@ -3,8 +3,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother} from "gsap/ScrollSmoother";
-
+import Box from './components/Box.jsx'
 const App = () => {
     gsap.registerPlugin(ScrollTrigger)
 
@@ -21,7 +20,7 @@ const App = () => {
       })
     })
   return (
-    <div className='section h-[300vh]'>
+    <div className='section bg-[#d1d1d1] h-[300vh]'>
       <div className="track h-screen sticky top-0 flex justify-center items-center">
         <div className="road relative h-50 w-full  overflow-hidden flex items-center">
           <img className='car z-2 h-50 absolute' src="/McLaren.png" alt="" />
@@ -30,8 +29,12 @@ const App = () => {
             <div className="text mr-25 text-[8rem] tracking-wider font-bold">WELCOME ITZFIZZ</div>
           </div>
         </div>
-
       </div>
+      <Box classnames={'absolute top-14 right-[31vw]'} textclr={'#111'} percent={58} text={'Increase in pick up point use'} bg={'#def54f'} size={'18'} />
+      <Box classnames={'absolute bottom-14 right-[32vw]'} textclr={'#111'} percent={23} text={'Decreased in customer phone calls'} bg={'#6ac9ff'} size={'16'}/>
+      <Box classnames={'absolute top-14 right-[11.3vw]'} textclr={'#fff'} percent={27} text={'Increase in pick up point use'} bg={'#333'} size={'18'} />
+      <Box classnames={'absolute bottom-14 right-[10.2vw]'} textclr={'#111'} percent={40} text={'Decreased in customer phone calls'} bg={'#fa7328'} size={'16'} />
+
     </div>
   )
 }
