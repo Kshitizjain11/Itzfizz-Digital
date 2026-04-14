@@ -18,6 +18,18 @@ const App = () => {
           scrub:true
         }
       })
+
+      gsap.to('.reveal', {
+      opacity: 1,
+      stagger: 0.4,
+      duration: 0.9,
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top+=400 top",
+        end: "top+=1200 top",
+        scrub: 1,
+      }
+})
     })
   return (
     <div className='section bg-[#d1d1d1] h-[300vh]'>
@@ -29,11 +41,12 @@ const App = () => {
             <div className="text mr-25 text-[8rem] tracking-wider font-bold">WELCOME ITZFIZZ</div>
           </div>
         </div>
+      
+      <Box classnames={'absolute reveal opacity-0 top-14 right-[31vw]'} textclr={'#111'} percent={58} text={'Increase in pick up point use'} bg={'#def54f'} size={'18'} />
+      <Box classnames={'absolute reveal opacity-0 bottom-14 right-[32vw]'} textclr={'#111'} percent={23} text={'Decreased in customer phone calls'} bg={'#6ac9ff'} size={'16'}/>
+      <Box classnames={'absolute reveal opacity-0 top-14 right-[11.3vw]'} textclr={'#fff'} percent={27} text={'Increase in pick up point use'} bg={'#333'} size={'18'} />
+      <Box classnames={'absolute reveal opacity-0 bottom-14 right-[10.2vw]'} textclr={'#111'} percent={40} text={'Decreased in customer phone calls'} bg={'#fa7328'} size={'16'} />
       </div>
-      <Box classnames={'absolute top-14 right-[31vw]'} textclr={'#111'} percent={58} text={'Increase in pick up point use'} bg={'#def54f'} size={'18'} />
-      <Box classnames={'absolute bottom-14 right-[32vw]'} textclr={'#111'} percent={23} text={'Decreased in customer phone calls'} bg={'#6ac9ff'} size={'16'}/>
-      <Box classnames={'absolute top-14 right-[11.3vw]'} textclr={'#fff'} percent={27} text={'Increase in pick up point use'} bg={'#333'} size={'18'} />
-      <Box classnames={'absolute bottom-14 right-[10.2vw]'} textclr={'#111'} percent={40} text={'Decreased in customer phone calls'} bg={'#fa7328'} size={'16'} />
 
     </div>
   )
